@@ -19,7 +19,7 @@ export { IObservable, IDepTreeNode } from "./core/observable";
 export { Reaction, IReactionPublic, IReactionDisposer } from "./core/reaction";
 export { IDerivation, untracked, IDerivationState } from "./core/derivation";
 export { IAtom, Atom, BaseAtom } from "./core/atom";
-export { useStrict, isStrictModeEnabled, IAction } from "./core/action";
+export { useStrict, isStrictModeEnabled, IAction, startAction, endAction, IActionRunInfo } from "./core/action";
 export { spy } from "./core/spy";
 export { IComputedValue } from "./core/computedvalue";
 export { IEqualsComparer, comparer } from "./types/comparer";

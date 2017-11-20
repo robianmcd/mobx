@@ -27,7 +27,7 @@ export { IDerivation, untracked, IDerivationState } from "./core/derivation"
 // the ones above
 export { IAtom, Atom, BaseAtom } from "./core/atom"
 
-export { useStrict, isStrictModeEnabled, IAction } from "./core/action"
+export { useStrict, isStrictModeEnabled, IAction, startAction, endAction, IActionRunInfo } from "./core/action"
 export { spy } from "./core/spy"
 export { IComputedValue } from "./core/computedvalue"
 
