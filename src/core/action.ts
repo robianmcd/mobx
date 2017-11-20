@@ -34,14 +34,14 @@ export function executeAction(actionName: string, fn: Function, scope?: any, arg
     }
 }
 
-interface IActionRunInfo {
+export interface IActionRunInfo {
     prevDerivation: IDerivation | null
     prevAllowStateChanges: boolean
     notifySpy: boolean
     startTime: number
 }
 
-function startAction(
+export function startAction(
     actionName: string,
     fn: Function,
     scope: any,
@@ -73,7 +73,7 @@ function startAction(
     }
 }
 
-function endAction(runInfo: IActionRunInfo) {
+export function endAction(runInfo: IActionRunInfo) {
     allowStateChangesEnd(runInfo.prevAllowStateChanges)
     endBatch()
     untrackedEnd(runInfo.prevDerivation)
